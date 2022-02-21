@@ -1,0 +1,97 @@
+html,
+body,
+img,
+a,
+div {
+    margin: 0;
+    padding: 0;
+}
+
+.container,
+.bg-exit,
+.border {
+    width: 970px;
+    height: 250px;
+    box-sizing: border-box;
+
+}
+
+.container {
+    position: relative;
+    overflow: hidden;
+    display: none;
+    background-color: #ffffff;
+}
+
+.container div,
+.container img,
+.container a {
+    position: absolute;
+}
+
+.border {
+    border: 1px solid #666766;
+    background-color: rgba(0,0,0,0);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+.logo {
+    width: 970px;
+    height: 250px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+	opacity: 0;
+}
+.logo-small {
+    width: 970px;
+    height: 250px;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+	opacity: 0;
+}
+
+.bg1{
+	opacity:0;
+}
+.txt1, .txt2, .txt3, .txt4, .txt5, .txt5_1, .txt-cta, .offer, .legal2, .legal4, .legal5, .man, .bg2, .bg3, .bg4, .bg5, .footer {
+    opacity: 0;
+}
+.bg1Slider, .bg2Slider, .bg3Slider, .bg4Slider, .bg5Slider{
+	opacity:1;
+}
+.txt1, .txt2, .txt3, .txt4, .txt5, .txt5_1{
+	top:-250px;
+}
+.man{
+	top:220px;
+	left:-55px;
+	opacity:1;
+}
+.cta {
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+	width: 970px;
+    height: 250px;
+}
+.arrow {
+    left: 929px;
+    top: 199px;
+    opacity: 0;
+    width: 30px;
+}
+.hidden {
+    opacity: 0;
+}
+
+.container:hover .overlay {
+  opacity: 0 !important;
+}

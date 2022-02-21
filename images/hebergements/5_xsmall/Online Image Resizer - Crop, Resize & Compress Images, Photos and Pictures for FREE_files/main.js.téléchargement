@@ -1,0 +1,245 @@
+function setInitialStates() {
+    hideAll([".txt2", ".txt3", ".legal5", ".txt5", ".txt5_1", ".cta", ".bg1", ".bg2", ".bg3", ".bg5", ".logo-small", ".arrow", ".bg1Slider", ".bg2Slider", ".bg3Slider", ".bg5Slider", ".footer", ".footer-3"]);
+}
+
+function mainInit() {
+    setInitialStates();
+    $('.container').show();
+    seq01();
+}
+
+function seq01() {
+    var twnDelay = 0;
+	$(".bg1Slider").show();
+	$(".bg1").show();
+	$(".footer").show();
+	$(".logo-small").show();
+	TweenMax.to($('.bg1Slider'), 0.3, {
+        opacity: 0,
+        ease: Power1.easeIn,
+        delay: twnDelay,
+		x:-1420,
+		y:-50,
+    });
+    
+	TweenMax.to($('.footer'), 0.1, {
+        opacity: 1,
+        ease: Power1.easeIn,
+        delay: twnDelay
+    });
+	twnDelay += 0.1;
+	TweenMax.to($('.bg1'), 0.5, {
+        opacity: 1,
+        ease: Power1.easeIn,
+        delay: twnDelay
+    });
+    TweenMax.to($('.logo-small'), 0.1, {
+        opacity: 1,
+        ease: Power1.easeIn,
+        delay: twnDelay
+    });
+    twnDelay += 0.4;
+    TweenMax.to($('.txt1'),0.6, {
+        opacity: 1,
+		y:250,
+        ease: Power1.easeInOut,
+        delay: twnDelay
+    });
+    twnDelay += 2.5;
+    TweenMax.delayedCall(twnDelay, seq02);
+}
+
+function seq02() {
+    var twnDelay = 0;
+	$(".txt2").show();
+    $(".bg2").show();
+	$(".bg1, .txt1, .logo-small, .footer ").hide();
+	$(".bg2Slider").show();
+	TweenMax.to($('.bg2Slider'), 0.3, {
+        opacity: 1,
+        ease: Power1.easeIn,
+        delay: twnDelay,
+		x:-1420,
+		y:-50,
+    });
+	twnDelay += 0.1;
+    TweenMax.to($('.bg2'), 0.5, {
+        opacity: 1,
+        ease: Power1.easeIn,
+        delay: twnDelay
+    });
+	twnDelay += 0.4;
+    TweenMax.to($('.txt2'), 0.6, {
+        opacity: 1,
+		y:250,
+        ease: Power1.easeOut,
+        delay: twnDelay
+    });
+    twnDelay += 2.5;
+    TweenMax.delayedCall(twnDelay, seq03);
+}
+
+function seq03() {
+    var twnDelay = 0;
+    $(".txt3").show();
+    $(".bg3").show();
+	$(".bg2, .txt2").hide();
+    $(".bg3Slider").show();
+    $(".footer-3").show();
+	TweenMax.to($('.bg3Slider'), 0.3, {
+        opacity: 1,
+        ease: Power1.easeIn,
+        delay: twnDelay,
+		x:-1420,
+		y:-50,
+    });
+	twnDelay += 0.1;
+    TweenMax.to($('.bg3'), 0.5, {
+        opacity: 1,
+        ease: Power1.easeIn,
+        delay: twnDelay
+    });
+    twnDelay += 0.4;
+    TweenMax.to($('.txt3'),0.6, {
+        opacity: 1,
+		y:250,
+        ease: Power1.easeInOut,
+        delay: twnDelay
+    });
+
+    twnDelay += 2.5;
+    TweenMax.delayedCall(twnDelay, seq05);
+}
+/*
+function seq04() {
+    var twnDelay = 0;
+    $(".txt4").show();
+	$(".legal4").show();
+    $(".bg4").show();
+	$(".bg2, .txt2, .legal2").hide();
+	$(".logo").show();
+	$(".man").show();
+     $(".bg4Slider").show();
+	TweenMax.to($('.bg4Slider'), 0.3, {
+        opacity: 1,
+        ease: Power1.easeIn,
+        delay: twnDelay,
+		x:-1420,
+		y:-50,
+    });
+    TweenMax.to($('.bg4'), 0.5, {
+        opacity: 1,
+        ease: Power1.easeOut,
+        delay: twnDelay
+    });
+	twnDelay += 0.2;
+    TweenMax.to($('.legal4'), 0.5, {
+        opacity: 1,
+        ease: Power1.easeOut,
+        delay: twnDelay
+    });
+    twnDelay += 0.3;
+    TweenMax.to($('.txt4'),0.6, {
+        opacity: 1,
+		y:250,
+        ease: Power1.easeInOut,
+        delay: twnDelay
+    });
+	TweenMax.to($('.logo'), 0.5, {
+        opacity: 1,
+        ease: Power1.easeOut,
+        delay: twnDelay
+    });
+
+    twnDelay += 2.5;
+    TweenMax.delayedCall(twnDelay, seq05);
+}
+
+*/
+function seq05() {
+	var twnDelay = 0;
+    $(".txt5").show();
+    $(".txt5_1").show();
+	$(".legal5").show();
+	$(".bg3, .txt3, .footer-3").hide();
+    $(".bg5").show();
+	$(".offer").show();
+	$(".cta").show();
+	$(".arrow").show();
+    $(".logo-small").show();
+	
+     $(".bg5Slider").show();
+	TweenMax.to($('.bg5Slider'), 0.3, {
+        opacity: 1,
+        ease: Power1.easeIn,
+        delay: twnDelay,
+		x:-1420,
+		y:-50,
+    });
+    TweenMax.to($('.bg5'), 0.5, {
+        opacity: 1,
+        ease: Power1.easeIn,
+        delay: twnDelay
+    });
+	twnDelay += 0.1;
+    TweenMax.to($('.txt5'),0.6, {
+        opacity: 1,
+		y:250,
+        ease: Power1.easeInOut,
+        delay: twnDelay
+    });
+    twnDelay += 0.1;
+    TweenMax.to($('.txt5_1'),0.6, {
+        opacity: 1,
+		y:250,
+        ease: Power1.easeInOut,
+        delay: twnDelay
+    });
+    
+	twnDelay += 0.2;
+	TweenMax.to($('.legal5'), 0.5, {
+        opacity: 1,
+        ease: Power1.easeOut,
+        delay: twnDelay
+    });
+    
+	twnDelay += 0.4;
+	TweenMax.to($('.offer'), 0.5, {
+        opacity: 1,
+        ease: Power1.easeOut,
+        delay: twnDelay
+    });
+
+	TweenMax.to($('.cta'), 0.5, {
+        opacity: 1,
+        ease: Power1.easeOut,
+        delay: twnDelay
+    });
+    
+	twnDelay += 0.3;
+
+    TweenMax.to($('.arrow'), 0.3, {
+        opacity: 1,
+        ease: Power1.easeIn,
+        delay: twnDelay
+    });
+    twnDelay += 0.2;
+    TweenMax.to($('.arrow'), 0.5, {
+        x: 3,
+        repeat: 10,
+        yoyo: true,
+        ease: Power1.easeIn,
+        delay: twnDelay
+    });
+    twnDelay += 2.5;
+}
+
+
+function hideAll(whichOnes) {
+    for (q = 0; q < whichOnes.length; q++) {
+        $(whichOnes[q]).hide();
+    }
+}
+
+
+window.onload = mainInit();
