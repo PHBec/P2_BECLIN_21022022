@@ -31,28 +31,30 @@ body{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width: 980px;
+    width: 100%;
     height: 70px;
     border: 2px solid white;
     border-radius: 10px;
 }
 .logo{
     display: flex;
-    width:480px;
+    width:48%;
     height: 60px;
     border: 2px solid white;
     border-radius: 5px;
 
 }
+.logos{
+    width: 100%;
+}
 .logos:hover{
     width: 100px;
     height: 50px;
-    
 }
 
 .ancre{
     display: flex;
-    width: 480px;
+    width: 48%;
     height: 60px;
     border: 2px solid white;
     border-radius: 5px;
@@ -60,14 +62,14 @@ body{
     
 }
 nav{
-    width: 480px;
+    width: 100%;
     display: flex;
 }
 .nav{
     list-style-type: none;
     display: flex;
     justify-content: flex-end;
-    width: 480px;
+    width: 100%;
     text-decoration: none;
     align-items: center;
 }
@@ -78,7 +80,7 @@ nav{
 }
 .heberger{
     width: 100px;
-    height: 50px;
+    height: 20px;
     display: flex;
     align-content: center;
     align-items: center;
@@ -97,7 +99,7 @@ nav{
 }
 .activer{
     width: 100px;
-    height: 50px;
+    height: 20px;
     display: flex;
     align-content: center;
     align-items: center;
@@ -112,7 +114,7 @@ nav{
 }
 /*formulaire*/
 .titre{
-    width: 982px;
+    width: 100%;
     height: 250px;
     border: 2px solid white;
     border-radius: 5px;
@@ -121,7 +123,7 @@ nav{
 }
 
 .appat{
-    width: 982px;
+    width: 100%;
     height: 70px;
     border: 2px solid white;
     border-radius: 5px;
@@ -134,7 +136,7 @@ nav{
     font-size: 12px;
 }
 .cherche{
-    width: 982px;
+    width: 100%;
     height: 50px;
     border: 2px solid white;
     border-radius: 5px;
@@ -178,19 +180,17 @@ nav{
     color: white;
 }
 form{
-    width: 800px;
-    height: 50px;
+    width: 85%;
     display: flex;
-    align-items: center;
+    margin-top: 15px;
 }
 /*filtrer*/
 .filtre{
-    width: 982px;
-    height: 50px;
+    width: 100%;
     border: 2px solid white;
     border-radius: 5px;
-    flex-direction: row;
     display: flex;
+    flex-direction: row;
     align-items: center;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -255,6 +255,10 @@ form{
 .textes{
     display: flex;
     align-items: center;
+  
+}
+.info{
+    width: 100%;
 }
 
 .info>i::before {
@@ -299,7 +303,7 @@ h1{
     height: 500px;
 }
 #hebergements{
-    width: 650px;
+    width: 100%;
     height: 20px;
     border: 2px solid #f2f2f2;
     border-radius: 10px;
@@ -317,6 +321,10 @@ h1{
     box-shadow: 15px 15px 15px #f2f2f2;
     
 }
+.logement:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
 .image_logement{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -332,7 +340,6 @@ h1{
     color: black;
     margin-left:10px ;
     display: flex;
-    
     justify-content: space-between;
 }
 .etoile{
@@ -345,13 +352,12 @@ h1{
     text-decoration: none;
 }
 .plus{
-    width: 650px;
+    width: 600px;
     height: 20px;
     border: 2px solid #f2f2f2;
     border-radius: 10px;
     text-decoration: none;
     color: black;
-    margin-left: 30px;
 }
 a{
     text-decoration: none;
@@ -362,6 +368,8 @@ a{
     justify-content: space-between;
     
 }
+
+
 /*populaire*/
 .populaire{
     display: flex;
@@ -394,6 +402,10 @@ a{
     font-size: 12px;
     display: flex;
     padding-left: 2px;
+}
+.peuple:hover{
+    cursor: pointer;
+    transform: scale(1.2);
 }
 .image_populaire{
     border-top-left-radius: 10px;
@@ -437,7 +449,7 @@ a{
 }
 #activites{
     width: 100%;
-    margin-top: 30px;
+    margin-top: 0px;
 }
 
 .monument{
@@ -547,4 +559,206 @@ a{
     width: 220px;
     flex-direction: column;
     
+}
+@media screen and (min-width:200px) and (max-width: 768px) {
+    #bloc_page{
+        width: auto;
+    }
+    #presentation, #reservation{
+        width:95%;
+        height: auto;
+    }
+    .logo .ancre{
+        width: auto;
+        height: auto;
+    }
+    .logos{
+        height: auto;
+    }
+    .nav{
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
+    .nave .naves{
+        height: 20px;
+        padding-left: none;
+    }
+    .heberger .activer{
+        height: 20px;
+    }
+    .titre, .activites, .final{
+        width: 95%;
+        height: auto;
+    }
+    .appat{
+        height: auto;
+    }
+    .filtre{
+        width: 95%;
+        flex-direction: column;
+    }
+    .filtre h3{
+        width: 95%;
+    }
+    .info{
+        width: 95%;
+    }
+    .choix{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    #reservation{
+        flex-direction: column-reverse;
+    }
+    .populaire{
+        width: 95%;
+    }
+    .logement:hover{
+        cursor: pointer;
+        transform:none;
+    }
+    .peuple:hover{
+        cursor: pointer;
+        transform: none;
+    }
+    .seloger{
+        width: 95%;
+        height: auto;
+    }
+    .seloger h3{
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .logement{
+        margin-bottom: 15px;
+    }
+    .boite{
+        width: auto;
+    }
+    .plus{
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 200px;
+    }
+    .titrepop h3{
+        font-size: 15px;
+    }
+    
+    .titrepop, .peuple{
+        width: 95%;
+        display: flex;
+    }
+    .activites h3{
+        width: 95%;
+        font-size: 15px;
+    }
+    .monument{
+        width: 95%;
+        height: auto;
+        justify-content: center;
+    }
+    
+    .grandmonument, .petitmonument{
+        width: 45%;
+        max-height: fit-content;
+    }
+    .service{
+        width: 95%;
+    }
+    .final{
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding-left: 20px;
+    }
+}
+@media screen and (min-width:769px) and (max-width:992px) {
+    #bloc_page{
+        width: auto;
+    }
+    #presentation, #reservation{
+        width:100%
+    }
+    .titre, .activites, .final{
+        width: 100%;
+        height: auto;
+    }
+    .appat{
+        height: auto;
+    }
+    .filtre{
+        width: 100%;
+        flex-direction: column;
+    }
+    .filtre h3{
+        width: 100%;
+    }
+    .info{
+        width: 100%;
+    }
+    .choix{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    #reservation{
+        flex-direction: column-reverse;
+    }
+    .populaire{
+        width: 100%;
+    }
+    .seloger{
+        width: 100%;
+        height: auto;
+        padding-bottom: 15px;
+    }
+    .seloger h3{
+        width: 100%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .plus{
+        width: 150px;
+    }
+    
+    .logement{
+        width: 45%;
+        height: auto;
+        text-align: start;
+        margin-bottom: 15px;
+    }
+    .titrepop, .peuple{
+        width: 100%;
+        display: flex;
+    }
+    .activites h3{
+        width: 100%;
+    }
+    .monument{
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+    
+    .grandmonument, .petitmonument{
+        width: 45%;
+        max-height: fit-content;
+    }
+    .service{
+        width: 100%;
+    }
+    .final{
+        height: auto;
+        padding-left: 20px;
+        column-gap: normal;
+    }
+
 }
