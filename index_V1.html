@@ -21,9 +21,9 @@
                 </div>
                 <div class="ancre">
                     <nav>
-                        <div class="nav">
-                            <div class="nave"><a class="heberger" href="#hebergements">Hébergements</a></div>
-                            <div class="naves"><a class="activer" href="#activites">Activités</a></div>
+                        <div class="liens">
+                            <a href="#hebergements">Hébergements</a>
+                            <a href="#activites">Activités</a>
                         </div>
                     </nav>
                 </div>
@@ -41,10 +41,10 @@
                         <label for="trouver"><i class="fas fa-map-marker-alt"></i></label>
                         </div>
                         <div class="ville">     
-                        <input class="cherches" type="search" name="trouver" id="trouver" placeholder="Marseilles, France" size="30"/>
+                        <input class="cherches" type="search" name="trouver" id="trouver" value="Marseille, France" placeholder="Saisissez une ville" size="30"/>
                         </div>
                         <div class="bouton">                                   
-                        <input class="trouves" type="submit" name="trouves" id="trouves" value="rechercher"/>
+                        <input class="trouves" type="submit" name="trouves" id="trouves" value="Rechercher"/>
                         </div>
                     </form>
                 </div>
@@ -53,19 +53,19 @@
                     <form class="choix" method="post" action="traitement.php">
                         <button class="selection filtreBleu">
                             <i class="fas fa-money-bill-wave icone"></i>
-                            <input class="couleurbouton" type="submit" value="Economique"/>
+                            <p class="couleurbouton">Economique</p>
                         </button>
                         <button class="selection filtreBleu">
                             <i class="fas fa-child icone"></i>
-                            <input class="couleurbouton" type="submit" value="Familial"/>
+                            <p class="couleurbouton">Familial</p> 
                         </button>
                         <button class="selection filtreBleu">
                             <i class="fas fa-heart icone"></i>
-                            <input class="couleurbouton" type="submit" value="Romantique"/>
+                            <p class="couleurbouton">Romantique</p>
                         </button>  
                         <button class="selection filtreBleu">
                             <i class="fas fa-dog icone"></i>
-                            <input class="couleurbouton" type="submit" value="Animaux autorisés"/>
+                            <p class="couleurbouton">Animaux autorisés</p>
                         </button>
                     </form>
                 </div>
@@ -78,7 +78,7 @@
             <div id="reservation">
                 <section class="seloger">
                     <h3 id="hebergements">Hébergements à Marseille</h3>
-                            <section class="logement">
+                            <article class="logement">
                                 <a href="#" class="lien-boite">
                                     <figure class="boite">
                                         <img class="image_logement" src="images/hebergements/5_xsmall/cannebiere.jpg" alt="cannebiere"/>
@@ -94,9 +94,9 @@
                                         </figcaption>
                                     </figure>
                                 </a>
-                            </section>
+                            </article>
                     
-                            <section class="logement">
+                            <article class="logement">
                                 <a href="#" class="lien-boite">
                                     <figure class="boite">
                                         <img class="image_logement" src="images/hebergements/5_xsmall/port.jpg" alt="port"/>
@@ -112,9 +112,9 @@
                                         </figcaption>
                                     </figure>
                                 </a>
-                            </section>
+                            </article>
 
-                            <section class="logement">
+                            <article class="logement">
                                 <a href="#" class="lien-boite">
                                     <figure class="boite">
                                         <img class="image_logement" src="images/hebergements/5_xsmall/mouettes.jpg" alt="mouettes"/>
@@ -130,9 +130,9 @@
                                         </figcaption>
                                     </figure>
                                 </a>
-                            </section>
+                            </article>
                             
-                            <section class="logement">
+                            <article class="logement">
                                 <a href="#" class="lien-boite">
                                     <figure class="boite">
                                         <img class="image_logement" src="images/hebergements/5_xsmall/mer.jpg" alt="mer"/>
@@ -148,9 +148,9 @@
                                         </figcaption>
                                     </figure>
                                 </a>
-                            </section>
+                            </article>
                         
-                            <section class="logement">
+                            <article class="logement">
                                 <a href="#" class="lien-boite">
                                     <figure class="boite">
                                         <img class="image_logement" src="images/hebergements/5_xsmall/panier.jpg" alt="panier"/>
@@ -166,9 +166,9 @@
                                         </figcaption>
                                     </figure>
                                 </a>
-                            </section>
+                            </article>
 
-                            <section class="logement">
+                            <article class="logement">
                                 <a href="#" class="lien-boite">
                                     <figure class="boite">
                                         <img class="image_logement" src="images/hebergements/5_xsmall/amina.jpg" alt="amina"/>
@@ -184,7 +184,7 @@
                                         </figcaption>
                                     </figure>
                                 </a>
-                            </section>
+                            </article>
                         
                     <a href="#"><h5 class="plus">Afficher plus</h5></a>      
                 </section>
@@ -199,7 +199,7 @@
                                     <img class="image_populaire" src="images/hebergements/5_xsmall/matin.jpg" alt="matin"/>
                                     <figcaption>
                                         <h4>Hôtel Le soleil du matin</h4><span>Nuits à partir de 128€</span>
-                                        <div class="etoiles">
+                                        <div class="etoile">
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
@@ -217,7 +217,7 @@
                                     <img class="image_populaire" src="images/hebergements/5_xsmall/leau.jpg" alt="leau"/>
                                     <figcaption>
                                         <h4>Au coeur de l'eau<br/>Chambres d'Hôtes</h4><span>Nuits à partir de 71€</span>
-                                        <div class="etoiles">
+                                        <div class="etoile">
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
@@ -235,7 +235,7 @@
                                     <img class="image_populaire" src="images/hebergements/5_xsmall/toutbleu.jpg" alt="toutbleu"/>
                                     <figcaption>
                                         <h4>Hôtel Tout bleu et Blanc</h4><span>Nuits à partir de 68€</span>
-                                        <div class="etoiles">
+                                        <div class="etoile">
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
@@ -272,8 +272,12 @@
                                 </article>
 
                                 <article class="visitemonument">
-                                    <a href="#" class="lien-activite"><img class="image-activite" src="images/activites/5_xsmall/frioul2.jpg" alt="frioul"/></a>
-                                    <figcaption><strong>île du Frioul</strong></figcaption>
+                                    <a href="#" class="lien-activite">
+                                        <figure>
+                                            <img class="image-activite" src="images/activites/5_xsmall/frioul2.jpg" alt="frioul"/>
+                                        </figure>                                        
+                                        <figcaption><strong>île du Frioul</strong></figcaption>
+                                    </a>
                                 </article>
                             </div>
                         </div>                        
