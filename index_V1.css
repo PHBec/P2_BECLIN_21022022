@@ -122,6 +122,12 @@ nav{
     align-items: center;
     flex-direction: row;      
 }
+.desktop{
+    display: none;
+}
+.mobile{
+    display: none;
+}
 .icon{
     width: 40px;
     height: 40px;
@@ -548,15 +554,18 @@ a{
 }
 @media screen and (min-width:200px) and (max-width: 768px) {
     #bloc_page{
-        width: auto;
+        width: 100%;
     }
     #presentation, #reservation{
-        width:95%;
+        width:100%;
         height: auto;
     }
     .logo .ancre{
         width: auto;
         height: auto;
+    }
+    .ancre{
+        flex-direction: column;
     }
     .logos{
         height: auto;
@@ -565,31 +574,57 @@ a{
         height: auto;
         flex-direction: column;
         justify-content: center;
-        align-items: flex-end;
     }
     .liens{
-        height: 20px;
         padding-left: 0;
+        align-items: center
     }
     .liens > a{
         height: 20px;
     }
     .titre, .activites, .final{
-        width: 95%;
+        width: 100%;
         height: auto;
     }
     .appat{
         height: auto;
     }
+    .cherche{
+        width: 100%;
+    }
+    .cherches{
+        width: 100%;
+    }
+    .bouton{
+        width: 50px;
+        border-radius: 15px;
+    
+    }
+    .mobile{
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }
+    .trouves{
+        display: none;
+    }
+    .loupe{
+        color: white;
+        padding-top: 12px;
+    }
+    .ville{
+        width: 150px;
+    }
     .filtre{
-        width: 95%;
+        width: 100%;
         flex-direction: column;
     }
     .filtre h3{
-        width: 95%;
+        width: 100%;
     }
     .info{
-        width: 95%;
+        width: 100%;
     }
     .choix{
         width: 100%;
@@ -602,7 +637,24 @@ a{
         flex-direction: column-reverse;
     }
     .populaire{
-        width: 95%;
+        width: 100%;
+        background-color: white;
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+    .peuple{
+        background-color: #f2f2f2;
+    }
+    .lien-peuple{
+        width: 60%;
+    }
+    .titrepop{
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+    #hebergements{
+        border: 2px solid white;
+        border-radius: 10px;
     }
     .logement:hover{
         cursor: pointer;
@@ -612,9 +664,11 @@ a{
         cursor: pointer;
         transform: none;
     }
+    
     .seloger{
-        width: 95%;
+        width: 100%;
         height: auto;
+        background-color: white;
     }
     .seloger h3{
         font-size: 15px;
@@ -623,39 +677,52 @@ a{
     }
     .logement{
         margin-bottom: 15px;
+        padding: 5px;
+        
     }
     .boite{
         width: auto;
+        background-color: #f2f2f2;
+        border-radius: 20px;
+        padding-top: 7px;
+    }
+    .logement figcaption{
+        border: 1px solid #f2f2f2;
     }
     .plus{
         margin-top: 15px;
         margin-bottom: 15px;
         width: 200px;
+        border: 2px solid white;
+        border-radius: 10px;
     }
     .titrepop h3{
         font-size: 15px;
     }
     
     .titrepop, .peuple{
-        width: 95%;
+        width: 100%;
         display: flex;
     }
     .activites h3{
-        width: 95%;
+        width: 100%;
         font-size: 15px;
     }
+    .activites article:hover {
+        transform: none;
+    }
     .monument{
-        width: 95%;
+        width: 100%;
         height: auto;
         justify-content: center;
     }
     
     .grandmonument, .petitmonument{
-        width: 45%;
+        width: 50%;
         max-height: fit-content;
     }
     .service{
-        width: 95%;
+        width: 100%;
     }
     .final{
         flex-direction: column;
@@ -746,5 +813,5 @@ a{
         padding-left: 20px;
         column-gap: normal;
     }
-
 }
+
