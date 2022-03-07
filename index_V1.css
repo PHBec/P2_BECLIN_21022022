@@ -1,817 +1,794 @@
 /*définition des polices personnalisees*/
-@font-face{
-    font-family:"raleway-variableFont_wght";
-    src: url(Raleway/Raleway-VariableFont_wght.ttf);
+@font-face {
+  font-family: "raleway-variableFont_wght";
+  src: url(Raleway/Raleway-VariableFont_wght.ttf);
 }
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-
 
 /*principaux elements de la page*/
-body{
-    font-family:"raleway-variableFont_wght";
-    background-color: white;
+body {
+  font-family: "raleway-variableFont_wght";
+  background-color: white;
 }
 
-#bloc_page{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: space-around;
-    width: 992px;
-    margin: auto;
-    background-color: white;
+#bloc_page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-around;
+  width: 992px;
+  margin: auto;
+  background-color: white;
 }
 /*En tete*/
-#presentation{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    height: 70px;
-    border: 2px solid white;
-    border-radius: 10px;
+#presentation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  border-radius: 10px;
 }
-.logo{
-    display: flex;
-    width:48%;
-    height: 60px;
-    border: 2px solid white;
-    border-radius: 5px;
-
+.logo {
+  display: flex;
+  width: 48%;
+  height: 60px;
+  border-radius: 5px;
 }
-.logos{
-    width: 100%;
+.logos {
+  width: 100%;
 }
-.logos:hover{
-    width: 100px;
-    height: 50px;
+.logos:hover {
+  width: 100px;
+  height: 50px;
 }
 
-.ancre{
-    display: flex;
-    width: 48%;
-    height: 60px;
-    border: 2px solid white;
-    border-radius: 5px;
-    font-size: 13px;
-    
+.ancre {
+  display: flex;
+  width: 48%;
+  height: 60px;
+  border-radius: 5px;
+  font-size: 13px;
 }
-nav{
-    width: 100%;
-    display: flex;
+nav {
+  width: 100%;
+  display: flex;
 }
-.liens{
-    list-style-type: none;
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    text-decoration: none;
-    align-items: center;
+.liens {
+  list-style-type: none;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  text-decoration: none;
+  align-items: center;
 }
-.liens > a{
-    width: 100px;
-    height: 100%;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: space-around;
-    border-top: white 2px solid;
-    text-decoration: none;
-    color: black;
+.liens > a {
+  width: 100px;
+  height: 100%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+  border-top: white 2px solid;
+  text-decoration: none;
+  color: black;
 }
-.liens > a:hover{
-    border-top: solid 2px #0065fc;
-    color: #0065fc;
+.liens > a:hover {
+  border-top: solid 2px #0065fc;
+  color: #0065fc;
 }
-.liens{
-    padding-left: 50px;        
+.liens {
+  padding-left: 50px;
 }
 /*formulaire*/
-.titre{
-    width: 100%;
-    height: 250px;
-    border: 2px solid white;
-    border-radius: 5px;
-    justify-content: space-around;
-    align-items: stretch;
+.titre {
+  width: 100%;
+  height: 250px;
+  border-radius: 5px;
+  justify-content: space-around;
+  align-items: stretch;
 }
 
-.appat{
-    width: 100%;
-    height: 70px;
-    border: 2px solid white;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-
+.appat {
+  width: 100%;
+  height: 70px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
 }
-.appat p{
-    margin-top: 10px;
-    font-size: 12px;
+.appat p {
+  margin-top: 10px;
+  font-size: 12px;
 }
-.cherche{
-    width: 100%;
-    height: 50px;
-    border: 2px solid white;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    flex-direction: row;      
+.cherche {
+  width: 100%;
+  height: 50px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 }
-.desktop{
-    display: none;
+.desktop {
+  display: none;
 }
-.mobile{
-    display: none;
+.mobile {
+  display: none;
 }
-.icon{
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border: 2px solid #f2f2f2;
-    background-color: #f2f2f2;
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
+.icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #f2f2f2;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
 }
-.ville{
-    width: 200px;
-    height: 40px;
-    display: flex;
-
+.ville {
+  width: 200px;
+  height: 40px;
+  display: flex;
 }
-.cherches{
-    border: none;
-    padding-left: 5px;
+.cherches {
+  border: none;
+  padding-left: 5px;
 }
 .cherches:focus-visible {
-    outline: none;
+  outline: none;
 }
-.bouton{
-    width: 80px;
-    height: 40px;
-    display: flex;
-    justify-content: space-around;
-    border: 2px solid #0065fc;
-    background-color: #0065fc;
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
+.bouton {
+  width: 80px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  border: 2px solid #0065fc;
+  background-color: #0065fc;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
 }
-.trouves{
-    border: none;
-    background-color: transparent;
-    color: white;
-    cursor: pointer;
+.trouves {
+  border: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
 }
-form{
-    width: 85%;
-    display: flex;
-    margin-top: 15px;
+form {
+  width: 85%;
+  display: flex;
+  margin-top: 15px;
 }
 /*filtrer*/
-.filtre{
-    width: 100%;
-    border: 2px solid white;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.filtre {
+  width: 100%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-.filtre h3{
-    margin-right: 10px;
-    font-size: 15px;
-}
-
-.selection{
-    height: 50px ;
-    width: fit-content;
-    border: 2px solid #f2f2f2;
-    border-radius: 30px;
-    margin-right: 20px;
-    display: flex;
-    align-items: center;
-    font-size: 13px;
-    font-weight: bold;
-    text-decoration: none;
-    
-}
-.couleurbouton{
-    border: 2px solid transparent;
-    background-color: transparent;
-    width: fit-content;
-    height: 45px;
-    border-radius: 30px;
-    font-weight: bold;
-    padding-right: 10px;
-    padding-top: 30px;
-}
-.couleurbouton:hover{
-    color: white;
+.filtre h3 {
+  margin-right: 10px;
+  font-size: 15px;
 }
 
-.icone{
-    border-radius: 30px;
-    color: #0065fc;
-    background-color: #deebff;
-    align-items: center;
-    justify-content: center;
-    margin-right: 10px;
-    padding: 16px 13px 16px 13px
-
+.selection {
+  height: 50px;
+  width: fit-content;
+  border-radius: 30px;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
 }
-.filtreBleu:hover{
-    background-color: #0065fc;
-    color: white;
-
+.couleurbouton {
+  background-color: transparent;
+  width: fit-content;
+  height: 45px;
+  border-radius: 30px;
+  font-weight: bold;
+  padding-right: 10px;
+  padding-top: 30px;
 }
-.filtreBleu{
-    background-color: white;
-    border: 2px solid #deebff;
-    cursor: pointer;
-    
-}
-.button{
-    width: 90px;
-    height: 25px;
-    border: #f2f2f2 solid 2px;
-    border-radius: 20px;
-}
-.textes{
-    display: flex;
-    align-items: center;
-  
-}
-.info{
-    width: 100%;
+.couleurbouton:hover {
+  color: white;
 }
 
-.info>i::before {
-    margin-right: 12px;
-    font-size: 12px;
-    padding: 4px 9px;
-    color: #0065fc;
-    text-align: center;
-    border-radius: 50%;
-    border: 1px solid #D7D7D7;
+.icone {
+  border-radius: 30px;
+  color: #0065fc;
+  background-color: #deebff;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  padding: 16px 13px 16px 13px;
 }
-.info p{
-    font-size: 12px;
+.filtreBleu:hover {
+  background-color: #0065fc;
+  color: white;
 }
-h1{
-    font-size: 20px;
+.filtreBleu {
+  background-color: white;
+  border: 2px solid #deebff;
+  cursor: pointer;
 }
-.fa-info-circle{
-    padding-right: 10px;
+.button {
+  width: 90px;
+  height: 25px;
+  border: #f2f2f2 solid 2px;
+  border-radius: 20px;
+}
+.textes {
+  display: flex;
+  align-items: center;
+}
+.info {
+  width: 100%;
+}
+
+.info > i::before {
+  margin-right: 12px;
+  font-size: 12px;
+  padding: 4px 9px;
+  color: #0065fc;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #d7d7d7;
+}
+.info p {
+  font-size: 12px;
+}
+h1 {
+  font-size: 20px;
+}
+.fa-info-circle {
+  padding-right: 10px;
 }
 /*hebergements a marseille*/
-#reservation{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 992px;
-    margin-top: 20px;
-    
+#reservation {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 992px;
+  margin-top: 20px;
 }
-.seloger{
-    display: flex;
-    border: 2px solid white;
-    border-radius: 10px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    text-align: start;
-    background-color: #f2f2f2;
-    width: 670px;
-    height: 500px;
+.seloger {
+  display: flex;
+  border-radius: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  text-align: start;
+  background-color: #f2f2f2;
+  width: 670px;
+  height: 500px;
 }
-#hebergements{
-    width: 100%;
-    border: 2px solid #f2f2f2;
-    border-radius: 10px;
-    font-weight: bold;
-    margin-left: 20px;
+#hebergements {
+  width: 100%;
+  border-radius: 10px;
+  font-weight: bold;
+  margin-left: 20px;
 }
-.logement{
-    width: 180px;
-    height: 170px;
-    border: 2px solid white;
-    border-radius: 20px;
-    background-color: white;
-    text-align:center;
-    font-size: 12px;
-    padding-top: 5px;
-    box-shadow: 15px 15px 15px #f2f2f2;
-    
+.logement {
+  width: 180px;
+  height: 170px;
+  border-radius: 20px;
+  background-color: white;
+  text-align: center;
+  font-size: 12px;
+  padding-top: 5px;
+  -webkit-box-shadow: 1px 6px 8px -1px rgb(228 226 226 / 70%);
+  box-shadow: 1px 6px 8px -1px rgb(228 226 226 / 70%);
 }
-.logement:hover{
-    cursor: pointer;
-    transform: scale(1.1);
+.logement:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
-.image_logement{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-
+.image_logement {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
-.logement figcaption{
-    width: 150px;
-    height: 45px;
-    border: 1px solid white;
-    border-radius: 10px;
-    font-size: 10px;
-    text-align: left;
-    color: black;
-    margin-left:10px ;
-    display: flex;
-    justify-content: space-between;
+.logement figcaption {
+  width: 150px;
+  height: 45px;
+  border-radius: 10px;
+  text-align: left;
+  color: black;
+  margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
 }
-.etoile{
-    color: #0065fc;
+.etoile {
+  color: #0065fc;
 }
-.etoile-vide{
-    color: #d6d6d6;
+.etoile-vide {
+  color: #d6d6d6;
 }
-.lien-boite{
-    text-decoration: none;
+.lien-boite {
+  text-decoration: none;
 }
-.plus{
-    width: 600px;
-    height: 20px;
-    border: 2px solid #f2f2f2;
-    border-radius: 10px;
-    text-decoration: none;
-    color: black;
+.lien-afficherplus {
+  width: 600px;
+  height: 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-.logement figcaption{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    
+.logement figcaption {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-
 
 /*populaire*/
-.populaire{
-    display: flex;
-    border: 2px solid white;
-    border-radius: 10px;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #f2f2f2;
-    width: 296px;
-    height: 500px;
+.populaire {
+  display: flex;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f2f2f2;
+  width: 296px;
+  height: 500px;
 }
-.titrepop{
-    display: flex;
-    justify-content: space-between;
-    width: 270px;
-    height: 20px;
-    border: 2px solid #f2f2f2;
-    border-radius: 10px;
-    flex-direction: row;
-    font-weight: bold ;
+.titrepop {
+  display: flex;
+  justify-content: space-between;
+  width: 270px;
+  height: 20px;
+  border-radius: 10px;
+  flex-direction: row;
+  font-weight: bold;
 }
 
-.peuple{
-    width: 270px;
-    height: 126px;
-    border: 2px solid white;
-    border-radius: 10px;
-    background-color: white;
-    font-size: 12px;
-    display: flex;
-    padding-left: 2px;
+.peuple {
+  width: 270px;
+  height: 126px;
+  border-radius: 10px;
+  background-color: white;
+  font-size: 12px;
+  display: flex;
+  padding-left: 2px;
+  -webkit-box-shadow: 1px 6px 8px -1px rgb(228 226 226 / 70%);
+  box-shadow: 1px 6px 8px -1px rgb(228 226 226 / 70%);
 }
-.peuple:hover{
-    cursor: pointer;
-    transform: scale(1.1);
+.peuple:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
-.image_populaire{
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+.image_populaire {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
-.peuple figcaption{
-    color: black;
-    display: flex;
-    flex-direction: column;
-    padding: 8px;
+.peuple figcaption {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
 }
-.lien-peuple{
-    width: 276px;
-    text-decoration: none;
-    display: flex;
-    flex-wrap: wrap;
+.lien-peuple {
+  width: 276px;
+  text-decoration: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 .lien-peuple .etoile {
-    margin-top: auto;
+  margin-top: auto;
 }
-.boites{
-    display: flex;
+.boites {
+  display: flex;
 }
-.boites figcaption h4{
-    margin-bottom: 15px;
+.boites figcaption h4 {
+  margin-bottom: 15px;
 }
 /*activite a marseille*/
 
-.activites{
-    display: flex;
-    border: 2px solid white;
-    border-radius: 10px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 21px;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    background-color: white;
-    height: 420px;
+.activites {
+  display: flex;
+  border-radius: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 21px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  background-color: white;
+  height: 420px;
 }
-#activites{
-    width: 100%;
-    margin-top: 0px;
-}
-
-.monument{
-    display: flex;
-    height: 340px;
-    border: 2px solid white;
-    border-radius: 10px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 21px;
-    align-items: center;
-    font-size: 12px;
-}
-.grandmonument{
-    width: 225px;
-    height: 340px;
-    border: 2px solid white;
-    border-radius: 10px;
-    box-shadow: 15px 15px 15px #f2f2f2;
-}
-.grandmonument figcaption, .visitemonument figcaption {
-    padding: 10px;
-}
-.visitemonument{
-    width: 100%;
-    height: 160px;
-    border: 2px solid white;
-    border-radius: 10px;
-    box-shadow: 15px 15px 15px #f2f2f2;
+#activites {
+  width: 100%;
+  margin-top: 0px;
 }
 
-.petitmonument{
-    display: flex;
-    flex-wrap: wrap;
-    width: 225px;
-    height: 340px;
-    border: 2px solid white;
-    border-radius: 10px;
-    align-content: space-between;
+.monument {
+  display: flex;
+  height: 340px;
+  border-radius: 10px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 21px;
+  align-items: center;
+  font-size: 12px;
+}
+.grandmonument {
+  width: 225px;
+  height: 340px;
+  border-radius: 10px;
+  box-shadow: 15px 15px 15px #f2f2f2;
+}
+.grandmonument figcaption,
+.visitemonument figcaption {
+  padding: 10px;
+}
+.visitemonument {
+  width: 100%;
+  height: 160px;
+  border-radius: 10px;
+  box-shadow: 15px 15px 15px #f2f2f2;
 }
 
-.image-activite{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    padding-bottom: 5px;
-    width: 100%;
-    
-    object-fit: cover;
+.petitmonument {
+  display: flex;
+  flex-wrap: wrap;
+  width: 225px;
+  height: 340px;
+  border-radius: 10px;
+  align-content: space-between;
 }
-.grandmonument .image-activite{
-    height: 300px;
+
+.image-activite {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-bottom: 5px;
+  width: 100%;
+
+  object-fit: cover;
 }
-.visitemonument .image-activite{
-    height: 120px;
+.grandmonument .image-activite {
+  height: 300px;
 }
-.lien-activite{
-    text-decoration: none;
-    color: black;
+.visitemonument .image-activite {
+  height: 120px;
+}
+.lien-activite {
+  text-decoration: none;
+  color: black;
 }
 .activites article:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
-.voir figcaption{
-    color: black;
+.voir figcaption {
+  color: black;
 }
 /*pied de page*/
-.final{
-    display: flex;
-    column-gap: 140px;
-    background-color: #f2f2f2;
-    border: 2px solid #f2f2f2;
-    border-radius: 10px;
+.final {
+  display: flex;
+  column-gap: 140px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  width: 100%;
+  height: 150px;
+  text-decoration: black;
+  padding-left: 30px;
+}
+.final a {
+  text-decoration: none;
+  color: black;
+}
+.service {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding-left: 0px;
+  border-radius: 10px;
+  width: 190px;
+  height: 100px;
+  font-size: 12px;
+}
+.service p {
+  font-weight: bold;
+}
+.texte {
+  flex-direction: column;
+}
+.service li {
+  list-style-type: none;
+  margin-top: 10px;
+}
+.service ul {
+  width: 220px;
+  flex-direction: column;
+}
+@media screen and (min-width: 200px) and (max-width: 768px) {
+  #bloc_page {
     width: 100%;
-    height: 150px;
-    text-decoration: black;
-    padding-left: 30px;
-}
-.final a{
-    text-decoration: none;
-    color: black;
-}
-.service{
+  }
+  #presentation,
+  #reservation {
+    width: 100%;
+    height: auto;
+  }
+  #hebergements {
+    margin: 0;
+  }
+  .logo .ancre {
+    width: auto;
+    height: auto;
+  }
+  .ancre {
+    flex-direction: column;
+  }
+  .logos {
+    height: auto;
+  }
+  .liens > a {
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .liens {
+    padding-left: 0;
+    align-items: center;
+  }
+  .liens > a {
+    height: 20px;
+  }
+  .titre,
+  .activites,
+  .final {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+  .appat {
+    height: auto;
+  }
+  .cherche {
+    width: 100%;
+  }
+  .cherches {
+    width: 100%;
+  }
+  .bouton {
+    width: 50px;
+    border-radius: 15px;
+  }
+  .mobile {
+    display: block;
+  }
+  .desktop {
+    display: none;
+  }
+  .trouves {
+    display: none;
+  }
+  .loupe {
+    color: white;
+    padding-top: 12px;
+  }
+  .ville {
+    width: 150px;
+  }
+  .filtre {
+    width: 100%;
+    flex-direction: column;
+  }
+  .filtre h3 {
+    width: 100%;
+  }
+  .info {
+    width: 100%;
+  }
+  .choix {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    padding-left: 0px;
-    border: 2px solid #f2f2f2;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  #reservation {
+    flex-direction: column-reverse;
+    padding: 10px;
+  }
+  .populaire {
+    width: 100%;
     border-radius: 10px;
-    width: 190px;
-    height: 100px;
-    font-size: 12px;
-    
-}
-.service p{
-    font-weight: bold;
-    
-}
-.texte{
-    flex-direction: column;
-}
-.service li{
-    
-    list-style-type: none;
-    margin-top: 10px;
-    
-    
-}
-.service ul{
-    width: 220px;
-    flex-direction: column;
-    
-}
-@media screen and (min-width:200px) and (max-width: 768px) {
-    #bloc_page{
-        width: 100%;
-    }
-    #presentation, #reservation{
-        width:100%;
-        height: auto;
-    }
-    .logo .ancre{
-        width: auto;
-        height: auto;
-    }
-    .ancre{
-        flex-direction: column;
-    }
-    .logos{
-        height: auto;
-    }
-    .liens > a {
-        height: auto;
-        flex-direction: column;
-        justify-content: center;
-    }
-    .liens{
-        padding-left: 0;
-        align-items: center
-    }
-    .liens > a{
-        height: 20px;
-    }
-    .titre, .activites, .final{
-        width: 100%;
-        height: auto;
-    }
-    .appat{
-        height: auto;
-    }
-    .cherche{
-        width: 100%;
-    }
-    .cherches{
-        width: 100%;
-    }
-    .bouton{
-        width: 50px;
-        border-radius: 15px;
-    
-    }
-    .mobile{
-        display: block;
-    }
-    .desktop{
-        display: none;
-    }
-    .trouves{
-        display: none;
-    }
-    .loupe{
-        color: white;
-        padding-top: 12px;
-    }
-    .ville{
-        width: 150px;
-    }
-    .filtre{
-        width: 100%;
-        flex-direction: column;
-    }
-    .filtre h3{
-        width: 100%;
-    }
-    .info{
-        width: 100%;
-    }
-    .choix{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-    #reservation{
-        flex-direction: column-reverse;
-    }
-    .populaire{
-        width: 100%;
-        background-color: white;
-        border: 2px solid white;
-        border-radius: 10px;
-    }
-    .peuple{
-        background-color: #f2f2f2;
-    }
-    .lien-peuple{
-        width: 60%;
-    }
-    .titrepop{
-        border: 2px solid white;
-        border-radius: 10px;
-    }
-    #hebergements{
-        border: 2px solid white;
-        border-radius: 10px;
-    }
-    .logement:hover{
-        cursor: pointer;
-        transform:none;
-    }
-    .peuple:hover{
-        cursor: pointer;
-        transform: none;
-    }
-    
-    .seloger{
-        width: 100%;
-        height: auto;
-        background-color: white;
-    }
-    .seloger h3{
-        font-size: 15px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    .logement{
-        margin-bottom: 15px;
-        padding: 5px;
-        
-    }
-    .boite{
-        width: auto;
-        background-color: #f2f2f2;
-        border-radius: 20px;
-        padding-top: 7px;
-    }
-    .logement figcaption{
-        border: 1px solid #f2f2f2;
-    }
-    .plus{
-        margin-top: 15px;
-        margin-bottom: 15px;
-        width: 200px;
-        border: 2px solid white;
-        border-radius: 10px;
-    }
-    .titrepop h3{
-        font-size: 15px;
-    }
-    
-    .titrepop, .peuple{
-        width: 100%;
-        display: flex;
-    }
-    .activites h3{
-        width: 100%;
-        font-size: 15px;
-    }
-    .activites article:hover {
-        transform: none;
-    }
-    .monument{
-        width: 100%;
-        height: auto;
-        justify-content: center;
-    }
-    
-    .grandmonument, .petitmonument{
-        width: 50%;
-        max-height: fit-content;
-    }
-    .service{
-        width: 100%;
-    }
-    .final{
-        flex-direction: column;
-        align-items: flex-start;
-        height: auto;
-        padding-left: 20px;
-    }
-}
-@media screen and (min-width:769px) and (max-width:992px) {
-    #bloc_page{
-        width: auto;
-    }
-    #presentation, #reservation{
-        width:100%
-    }
-    .titre, .activites, .final{
-        width: 100%;
-        height: auto;
-    }
-    .appat{
-        height: auto;
-    }
-    .filtre{
-        width: 100%;
-        flex-direction: column;
-    }
-    .filtre h3{
-        width: 100%;
-    }
-    .info{
-        width: 100%;
-    }
-    .choix{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 10px;
-    }
-    #reservation{
-        flex-direction: column-reverse;
-    }
-    .populaire{
-        width: 100%;
-    }
-    .seloger{
-        width: 100%;
-        height: auto;
-        padding-bottom: 15px;
-    }
-    .seloger h3{
-        width: 100%;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .plus{
-        width: 150px;
-    }
-    
-    .logement{
-        width: 45%;
-        height: auto;
-        text-align: start;
-        margin-bottom: 15px;
-    }
-    .titrepop, .peuple{
-        width: 100%;
-        display: flex;
-    }
-    .activites h3{
-        width: 100%;
-    }
-    .monument{
-        width: 100%;
-        height: auto;
-        justify-content: center;
-    }
-    
-    .grandmonument, .petitmonument{
-        width: 45%;
-        max-height: fit-content;
-    }
-    .service{
-        width: 100%;
-    }
-    .final{
-        height: auto;
-        padding-left: 20px;
-        column-gap: normal;
-    }
-}
+  }
+  .lien-peuple {
+    width: 100%;
+  }
+  .titrepop {
+    border-radius: 10px;
+  }
+  #hebergements {
+    border-radius: 10px;
+  }
+  .logement:hover {
+    cursor: pointer;
+    transform: none;
+  }
+  .peuple:hover {
+    cursor: pointer;
+    transform: none;
+  }
 
+  .seloger {
+    width: 100%;
+    height: auto;
+    background-color: white;
+    margin-top: 40px;
+  }
+  .seloger h3 {
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .logement {
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    width: 100%;
+  }
+  .image_logement {
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+  }
+  .boite {
+    width: auto;
+    border-radius: 20px;
+    padding-top: 7px;
+  }
+
+  .boites {
+    width: 100%;
+  }
+
+  .image_populaire {
+    width: 30%;
+  }
+
+  .peuple figcaption {
+    width: 70%;
+  }
+  .lien-afficherplus {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  .titrepop h3 {
+    font-size: 15px;
+  }
+
+  .titrepop,
+  .peuple {
+    width: 100%;
+    display: flex;
+    margin: 0 10px;
+  }
+  .activites h3 {
+    width: 100%;
+    font-size: 15px;
+  }
+  .activites article:hover {
+    transform: none;
+  }
+  .monument {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+  }
+
+  .grandmonument,
+  .petitmonument {
+    width: 50%;
+    max-height: fit-content;
+  }
+  .service {
+    width: 100%;
+  }
+  .final {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding-left: 20px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  #bloc_page {
+    width: auto;
+  }
+  #presentation,
+  #reservation {
+    width: 100%;
+  }
+  .titre,
+  .activites,
+  .final {
+    width: 100%;
+    height: auto;
+  }
+  .appat {
+    height: auto;
+  }
+  .filtre {
+    width: 100%;
+    flex-direction: column;
+  }
+  .filtre h3 {
+    width: 100%;
+  }
+  .info {
+    width: 100%;
+  }
+  .choix {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  #reservation {
+    flex-direction: column-reverse;
+  }
+  .populaire {
+    width: 100%;
+  }
+  .seloger {
+    width: 100%;
+    height: auto;
+    padding-bottom: 15px;
+  }
+  .seloger h3 {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .lien-afficherplus {
+    width: 150px;
+  }
+
+  .logement {
+    width: 45%;
+    height: auto;
+    text-align: start;
+    margin-bottom: 15px;
+  }
+  .titrepop,
+  .peuple {
+    width: 100%;
+    display: flex;
+  }
+  .activites h3 {
+    width: 100%;
+  }
+  .monument {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+  }
+
+  .grandmonument,
+  .petitmonument {
+    width: 45%;
+    max-height: fit-content;
+  }
+  .service {
+    width: 100%;
+  }
+  .final {
+    height: auto;
+    padding-left: 20px;
+    column-gap: normal;
+  }
+}
