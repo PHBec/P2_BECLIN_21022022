@@ -36,15 +36,12 @@ body {
 .logo {
   display: flex;
   width: 100%;
-  height: 60px;
   border-radius: 5px;
 }
 .logos {
   width: 100%;
   padding-left: 30px;
 }
-
-
 
 .ancre {
   display: flex;
@@ -76,7 +73,7 @@ nav {
   text-decoration: none;
   color: black;
 }
-.liens > a:hover{
+.liens > a:hover {
   border-top: 2px solid #0065fc;
   color: #0065fc;
 }
@@ -157,8 +154,7 @@ nav {
   cursor: pointer;
 }
 form {
-  width: 85%;
-  display: flex;
+  width: 100%;
   margin-top: 15px;
 }
 /*filtrer*/
@@ -271,18 +267,17 @@ h1 {
   width: 670px;
   height: 500px;
 }
-.seloger h3{
+.seloger h3 {
   font-weight: bold;
 }
 #hebergements {
   width: 100%;
   border-radius: 10px;
   font-weight: bold;
-  margin-left: 20px;
+  margin: 10px;
 }
 .logement {
   width: 180px;
-  height: 190px;
   border-radius: 20px;
   background-color: white;
   text-align: center;
@@ -296,46 +291,21 @@ h1 {
   transform: scale(1.1);
 }
 .image_logement {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  width: 95%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 98%;
   object-fit: cover;
-}
-.image_panier{
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  width: 95%;
-  height: 114px;
-  object-fit: cover;
-}
-.image_mer{
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  width: 95%;
-  height: 114px;
-  object-fit: cover;
-}
-.image_amina{
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-  width: 95%;
-  height: 114px;
-  object-fit: cover;
+  height: 115px;
 }
 .logement figcaption {
-  width: 150px;
-  height: 45px;
   border-radius: 10px;
   text-align: left;
   color: black;
-  margin-left: 10px;
   display: flex;
   justify-content: space-between;
+  padding: 10px;
 }
-figcaption h4{
-  padding-top: 5px;
-}
-.logement_tarif{
+.logement_tarif {
   padding-top: 5px;
 }
 .etoile {
@@ -407,7 +377,6 @@ a {
   object-fit: cover;
   width: 126px;
   margin: 4px;
-  
 }
 .peuple figcaption {
   color: black;
@@ -481,7 +450,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   width: 225px;
-  height: 340px;
+  gap: 20px;
   border-radius: 10px;
   align-content: space-between;
 }
@@ -559,7 +528,7 @@ a {
     width: 100%;
     height: auto;
   }
-  #presentation{
+  #presentation {
     flex-direction: column;
   }
   #hebergements {
@@ -585,11 +554,11 @@ a {
     justify-content: center;
     width: 100%;
   }
-  .liens > a:hover{
+  .liens > a:hover {
     border-bottom: solid 2px #0065fc;
     color: #0065fc;
   }
-  .liens > a:hover{
+  .liens > a:hover {
     border-top: 0px;
   }
   .liens {
@@ -601,6 +570,7 @@ a {
   }
   .liens > a {
     height: 20px;
+    padding-bottom: 10px;
   }
   .titre,
   .activites,
@@ -614,9 +584,11 @@ a {
   }
   .cherche {
     width: 100%;
+    justify-content: center;
   }
   .cherches {
     width: 100%;
+    justify-content: center;
   }
   .bouton {
     width: 50px;
@@ -640,7 +612,11 @@ a {
   }
   .filtre {
     width: 100%;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+    display: flex;
   }
   .filtre h3 {
     width: 100%;
@@ -663,7 +639,7 @@ a {
     width: 100%;
     border-radius: 10px;
   }
- 
+
   .lien-peuple {
     width: 100%;
   }
@@ -703,16 +679,6 @@ a {
     height: 110px;
     object-fit: cover;
   }
-  .image_panier{
-    width: 100%;
-    height: 110px;
-    object-fit: cover;
-  }
-  .image_mer{
-    width: 100%;
-    height: 110px;
-    object-fit: cover;
-  }
   .boite {
     width: auto;
     border-radius: 20px;
@@ -721,21 +687,21 @@ a {
   .boites {
     width: 100%;
   }
-  .image_populaire{
+  .image_populaire {
     width: 50%;
   }
-  .image_toutbleu{
+  .image_toutbleu {
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     object-fit: cover;
     min-width: 120px;
     margin: 4px;
   }
-  .image_populaire_grde{
+  .image_populaire_grde {
     border-width: 40%;
     object-fit: cover;
   }
-  
+
   .peuple figcaption {
     width: 70%;
   }
@@ -772,13 +738,13 @@ a {
     width: 100%;
     max-height: fit-content;
   }
-  .grandmonument{
+  .grandmonument {
     height: 160px;
   }
-  .grandmonument .image-activite{
+  .grandmonument .image-activite {
     height: 120px;
   }
-  
+
   .service {
     width: 100%;
   }
@@ -796,7 +762,7 @@ a {
   #presentation,
   #reservation {
     width: 100%;
-    margin-left: 10px;
+    margin: 10px;
   }
   .titre,
   .activites,
@@ -810,10 +776,13 @@ a {
   }
   .filtre {
     width: 100%;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
   }
   .filtre h3 {
     width: 100%;
+    margin-bottom: 10px;
   }
   .info {
     width: 100%;
@@ -829,12 +798,16 @@ a {
     flex-direction: column-reverse;
   }
   .populaire {
-    width: 100%;
+    width: 98%;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
   }
   .seloger {
-    width: 100%;
+    width: 98%;
+    padding: 10px;
     height: auto;
-    padding-bottom: 15px;
+    border-radius: 0 0 10px 10px;
+    justify-content: space-between;
   }
   .seloger h3 {
     width: 100%;
@@ -846,46 +819,27 @@ a {
   }
 
   .logement {
-    width: 45%;
+    width: 48%;
     height: auto;
     text-align: center;
     margin-bottom: 15px;
   }
-  .image_logement{
+  .image_logement {
     height: 150px;
     object-fit: cover;
   }
-  .image_panier{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-  }
-  .image_mer{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-  }
-  .image_amina{
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-  }
-  .image_populaire{
+  .image_populaire {
     width: 300px;
-  }
-  .boite{
-    height: 200px;
   }
   .titrepop,
   .peuple {
     width: 100%;
     display: flex;
+  }
+  .peuple:hover,
+  .logement:hover,
+  .activites article:hover {
+    transform: none;
   }
   .activites h3 {
     width: 100%;
