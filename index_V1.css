@@ -35,17 +35,16 @@ body {
 }
 .logo {
   display: flex;
-  width: 48%;
+  width: 100%;
   height: 60px;
   border-radius: 5px;
 }
 .logos {
   width: 100%;
+  padding-left: 30px;
 }
-.logos:hover {
-  width: 100px;
-  height: 50px;
-}
+
+
 
 .ancre {
   display: flex;
@@ -77,8 +76,8 @@ nav {
   text-decoration: none;
   color: black;
 }
-.liens > a:hover {
-  border-top: solid 2px #0065fc;
+.liens > a:hover{
+  border-top: 2px solid #0065fc;
   color: #0065fc;
 }
 .liens {
@@ -91,6 +90,7 @@ nav {
   border-radius: 5px;
   justify-content: space-around;
   align-items: stretch;
+  margin-left: 10px;
 }
 
 .appat {
@@ -256,7 +256,7 @@ h1 {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
-  width: 992px;
+  width: 100%;
   margin-top: 20px;
 }
 .seloger {
@@ -271,6 +271,9 @@ h1 {
   width: 670px;
   height: 500px;
 }
+.seloger h3{
+  font-weight: bold;
+}
 #hebergements {
   width: 100%;
   border-radius: 10px;
@@ -279,7 +282,7 @@ h1 {
 }
 .logement {
   width: 180px;
-  height: 170px;
+  height: 190px;
   border-radius: 20px;
   background-color: white;
   text-align: center;
@@ -295,6 +298,29 @@ h1 {
 .image_logement {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  width: 95%;
+  object-fit: cover;
+}
+.image_panier{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 95%;
+  height: 114px;
+  object-fit: cover;
+}
+.image_mer{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 95%;
+  height: 114px;
+  object-fit: cover;
+}
+.image_amina{
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 95%;
+  height: 114px;
+  object-fit: cover;
 }
 .logement figcaption {
   width: 150px;
@@ -306,8 +332,15 @@ h1 {
   display: flex;
   justify-content: space-between;
 }
+figcaption h4{
+  padding-top: 5px;
+}
+.logement_tarif{
+  padding-top: 5px;
+}
 .etoile {
   color: #0065fc;
+  padding-top: 5px;
 }
 .etoile-vide {
   color: #d6d6d6;
@@ -371,6 +404,10 @@ a {
 .image_populaire {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
+  object-fit: cover;
+  width: 126px;
+  margin: 4px;
+  
 }
 .peuple figcaption {
   color: black;
@@ -379,7 +416,7 @@ a {
   padding: 8px;
 }
 .lien-peuple {
-  width: 276px;
+  width: 100%;
   text-decoration: none;
   display: flex;
   flex-wrap: wrap;
@@ -389,6 +426,7 @@ a {
 }
 .boites {
   display: flex;
+  height: 126px;
 }
 .boites figcaption h4 {
   margin-bottom: 15px;
@@ -403,6 +441,7 @@ a {
   gap: 21px;
   margin-top: 20px;
   margin-bottom: 40px;
+  margin-left: 10px;
   background-color: white;
   height: 420px;
 }
@@ -481,6 +520,7 @@ a {
   height: 150px;
   text-decoration: black;
   padding-left: 30px;
+  margin-left: 10px;
 }
 .final a {
   text-decoration: none;
@@ -510,7 +550,7 @@ a {
   width: 220px;
   flex-direction: column;
 }
-@media screen and (min-width: 200px) and (max-width: 768px) {
+@media screen and (min-width: 300px) and (max-width: 768px) {
   #bloc_page {
     width: 100%;
   }
@@ -518,6 +558,9 @@ a {
   #reservation {
     width: 100%;
     height: auto;
+  }
+  #presentation{
+    flex-direction: column;
   }
   #hebergements {
     margin: 0;
@@ -528,18 +571,33 @@ a {
   }
   .ancre {
     flex-direction: column;
+    width: 100%;
   }
   .logos {
     height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
   .liens > a {
     height: auto;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
+  }
+  .liens > a:hover{
+    border-bottom: solid 2px #0065fc;
+    color: #0065fc;
+  }
+  .liens > a:hover{
+    border-top: 0px;
   }
   .liens {
     padding-left: 0;
     align-items: center;
+    width: 100%;
+    height: 50px;
+    justify-content: center;
   }
   .liens > a {
     height: 20px;
@@ -605,6 +663,7 @@ a {
     width: 100%;
     border-radius: 10px;
   }
+ 
   .lien-peuple {
     width: 100%;
   }
@@ -644,20 +703,39 @@ a {
     height: 110px;
     object-fit: cover;
   }
+  .image_panier{
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+  }
+  .image_mer{
+    width: 100%;
+    height: 110px;
+    object-fit: cover;
+  }
   .boite {
     width: auto;
     border-radius: 20px;
     padding-top: 7px;
   }
-
   .boites {
     width: 100%;
   }
-
-  .image_populaire {
-    width: 30%;
+  .image_populaire{
+    width: 50%;
   }
-
+  .image_toutbleu{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    object-fit: cover;
+    min-width: 120px;
+    margin: 4px;
+  }
+  .image_populaire_grde{
+    border-width: 40%;
+    object-fit: cover;
+  }
+  
   .peuple figcaption {
     width: 70%;
   }
@@ -691,9 +769,16 @@ a {
 
   .grandmonument,
   .petitmonument {
-    width: 50%;
+    width: 100%;
     max-height: fit-content;
   }
+  .grandmonument{
+    height: 160px;
+  }
+  .grandmonument .image-activite{
+    height: 120px;
+  }
+  
   .service {
     width: 100%;
   }
@@ -704,19 +789,21 @@ a {
     padding-left: 20px;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 992px) {
+@media screen and (min-width: 769px) and (max-width: 991px) {
   #bloc_page {
     width: auto;
   }
   #presentation,
   #reservation {
     width: 100%;
+    margin-left: 10px;
   }
   .titre,
   .activites,
   .final {
     width: 100%;
     height: auto;
+    margin-left: 10px;
   }
   .appat {
     height: auto;
@@ -761,8 +848,39 @@ a {
   .logement {
     width: 45%;
     height: auto;
-    text-align: start;
+    text-align: center;
     margin-bottom: 15px;
+  }
+  .image_logement{
+    height: 150px;
+    object-fit: cover;
+  }
+  .image_panier{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  .image_mer{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  .image_amina{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  .image_populaire{
+    width: 300px;
+  }
+  .boite{
+    height: 200px;
   }
   .titrepop,
   .peuple {
