@@ -687,6 +687,7 @@ a {
   }
   .image_populaire {
     width: 50%;
+    min-width:153px;
   }
   .peuple figcaption {
     width: 70%;
