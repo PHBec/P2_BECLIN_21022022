@@ -19,7 +19,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: space-around;
-  width: 992px;
+  width: 975px;
   margin: auto;
   background-color: white;
 }
@@ -30,7 +30,7 @@ body {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  height: 70px;
+  height: auto;
   border-radius: 10px;
 }
 .logo {
@@ -46,7 +46,7 @@ body {
 .ancre {
   display: flex;
   width: 48%;
-  height: 60px;
+  height: auto;
   border-radius: 5px;
   font-size: 13px;
 }
@@ -83,7 +83,7 @@ nav {
 /*formulaire*/
 .titre {
   width: 100%;
-  height: 250px;
+  height: auto;
   border-radius: 5px;
   justify-content: space-around;
   align-items: stretch;
@@ -92,10 +92,11 @@ nav {
 
 .appat {
   width: 100%;
-  height: 70px;
+  height: auto;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
+  padding-bottom: 20px;
 }
 .appat p {
   margin-top: 10px;
@@ -103,7 +104,7 @@ nav {
 }
 .cherche {
   width: 100%;
-  height: 50px;
+  height: auto;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -265,7 +266,7 @@ h1 {
   text-align: start;
   background-color: #f2f2f2;
   width: 670px;
-  height: 500px;
+  height: auto;
 }
 .seloger h3 {
   font-weight: bold;
@@ -320,7 +321,7 @@ h1 {
 }
 .lien-afficherplus {
   width: 600px;
-  height: 20px;
+  height: auto;
   border-radius: 10px;
   text-decoration: none;
   color: black;
@@ -412,7 +413,7 @@ a {
   margin-bottom: 40px;
   margin-left: 10px;
   background-color: white;
-  height: 420px;
+  height: auto;
 }
 #activites {
   width: 100%;
@@ -421,7 +422,7 @@ a {
 
 .monument {
   display: flex;
-  height: 340px;
+  height: auto;
   border-radius: 10px;
   flex-direction: row;
   flex-wrap: wrap;
@@ -431,7 +432,7 @@ a {
 }
 .grandmonument {
   width: 225px;
-  height: 340px;
+  height: auto;
   border-radius: 10px;
   box-shadow: 15px 15px 15px #f2f2f2;
 }
@@ -441,7 +442,7 @@ a {
 }
 .visitemonument {
   width: 100%;
-  height: 160px;
+  height: auto;
   border-radius: 10px;
   box-shadow: 15px 15px 15px #f2f2f2;
 }
@@ -486,7 +487,7 @@ a {
   background-color: #f2f2f2;
   border-radius: 10px;
   width: 100%;
-  height: 150px;
+  height: auto;
   text-decoration: black;
   padding-left: 30px;
   margin-left: 10px;
